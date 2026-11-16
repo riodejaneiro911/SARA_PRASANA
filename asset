@@ -1,1 +1,481 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f2f7fb;
+    color: #262d38;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    background: linear-gradient(135deg, #e0f0fa, #f2f9fd);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c1e5fc;
+}
+
+.header h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+    color: #174f78;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 10px;
+    color: #39abf6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+/* CARD */
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 18px rgba(57, 171, 246, 0.12);
+    border: 1px solid #e0edf5;
+}
+
+.card h3 {
+    margin: 0 0 20px;
+    color: #174f78;
+    font-size: 18px;
+}
+
+/* FORM */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5c6b7b;
+}
+
+/* SEMUA INPUT */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #c1dce9;
+    border-radius: 12px;
+    background: #fbfdff;
+    color: #262d38;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* FOCUS */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #39abf6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(57, 171, 246, 0.15);
+}
+
+/* TEXTAREA */
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+/* SELECT */
+
+select {
+    cursor: pointer;
+}
+
+/* FILE */
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c1dce9;
+    border-radius: 12px;
+    background: #fbfdff;
+    color: #5c6b7b;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+input[type="file"]:focus {
+    border-color: #39abf6;
+    box-shadow: 0 0 0 3px rgba(57, 171, 246, 0.15);
+}
+
+/* BUTTON */
+
+button {
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 12px;
+    background: #39abf6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(57, 171, 246, 0.22);
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #218fd0;
+    transform: translateY(-1px);
+}
+
+/* TABLE */
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid #dcebf4;
+    border-radius: 14px;
+}
+
+th {
+    padding: 14px;
+    background: #e0f0fa;
+    color: #17547d;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    padding: 14px;
+    border-top: 1px solid #edf2f5;
+    font-size: 14px;
+    background: #ffffff;
+    vertical-align: top;
+}
+
+tr:hover td {
+    background: #f2f9fd;
+}
+
+/* FOTO DI TABEL */
+
+.table-wrapper img {
+    display: block;
+    width: 100px;
+    max-width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #dcebf4;
+}
+
+/* STATUS DI TABEL */
+
+.table-wrapper td select {
+    min-width: 130px;
+    padding: 10px 12px;
+}
+
+/* KETERANGAN ADMIN */
+
+.table-wrapper td textarea {
+    min-width: 180px;
+    min-height: 85px;
+    padding: 10px 12px;
+    resize: vertical;
+}
+
+/* TOMBOL SIMPAN DI TABEL */
+
+.table-wrapper td button {
+    margin-top: 8px;
+    padding: 9px 14px;
+    font-size: 13px;
+}
+
+/* AKSI */
+
+.edit {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 9px;
+    background: #e0f0fa;
+    color: #168bd0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.edit:hover {
+    background: #c1e5fc;
+}
+
+.hapus {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 9px;
+    background: #fff0f0;
+    color: #e05252;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hapus:hover {
+    background: #ffe0e0;
+}
+
+.kosong {
+    text-align: center;
+    color: #8997a3;
+    padding: 25px;
+}
+
+
+/* STATISTIK KATEGORI */
+
+.statistik-card h4 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #262d38;
+    font-size: 16px;
+}
+
+.statistik-card .table-wrapper {
+    margin-top: 10px;
+    border-radius: 14px;
+    overflow-x: auto;
+}
+
+.statistik-card table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.statistik-card table th {
+    background: #e0f0fa;
+    color: #262d38;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 13px 14px;
+    text-align: left;
+    border-bottom: 1px solid #c1e5fc;
+}
+
+.statistik-card table td {
+    padding: 13px 14px;
+    font-size: 14px;
+    color: #5c6b7b;
+    border-bottom: 1px solid #e8f0f5;
+}
+
+.statistik-card table tr:last-child td {
+    border-bottom: none;
+}
+
+.statistik-card table tr:hover td {
+    background: #f2f7fb;
+}
+
+.statistik-card .kosong {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background: #f2f7fb;
+    color: #5c6b7b;
+    text-align: center;
+}
+
+
+/* FILTER PENGADUAN */
+
+.card form select {
+    margin-bottom: 2px;
+}
+
+.card form button {
+    margin-right: 8px;
+}
+
+.card form a {
+    text-decoration: none;
+}
+
+.card form a button {
+    background: #e0f0fa;
+    color: #17547d;
+    box-shadow: none;
+}
+
+.card form a button:hover {
+    background: #c1e5fc;
+    color: #174f78;
+}
+
+
+/* MENU ADMIN */
+
+.menu-admin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.menu-admin a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: #f2f9fd;
+    border: 1px solid #c1e5fc;
+    color: #17547d;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.menu-admin a:hover {
+    background: #e0f0fa;
+    border-color: #39abf6;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(57, 171, 246, 0.12);
+}
+
+.menu-admin .logout {
+    background: #fff5f5;
+    border-color: #ffdede;
+    color: #d95353;
+}
+
+.menu-admin .logout:hover {
+    background: #ffeaea;
+    border-color: #e05252;
+    box-shadow: 0 5px 12px rgba(217, 83, 83, 0.10);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .header,
+    .card {
+        padding: 18px;
+    }
+
+    .header h2 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        padding: 12px 13px;
+        font-size: 14px;
+    }
+
+    textarea {
+        min-height: 115px;
+    }
+
+    th,
+    td {
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    .edit,
+    .hapus {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+
+    .menu-admin {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-admin a {
+        min-height: 54px;
+    }
+
+    /* TABEL PENGADUAN DI HP */
+
+    .table-wrapper {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .table-wrapper table {
+        min-width: 850px;
+    }
+
+    .table-wrapper td {
+        padding: 10px;
+    }
+
+    .table-wrapper img {
+        width: 85px;
+        max-width: 85px;
+        height: 65px;
+    }
+
+    .table-wrapper td select {
+        min-width: 125px;
+    }
+
+    .table-wrapper td textarea {
+        min-width: 170px;
+    }
+}
